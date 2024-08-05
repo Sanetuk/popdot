@@ -22,9 +22,12 @@
 
         #page2 {
             display: none;
-            margin:0px;
-
         }
+
+        #page3 {
+            display: none;
+        }
+
         body {
             display: flex;
             justify-content: center;
@@ -37,14 +40,14 @@
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(30, 40px);
+            grid-template-columns: repeat(26, 40px);
             grid-template-rows: repeat(15, 40px);
             gap: 10px;
         }
 
         .dot {
-            width: 30px;
-            height: 30px;
+            width: 40px;
+            height: 40px;
             background-color: rgb(255, 255, 255);
             border-radius: 50%;
             transition: transform 0.1s ease;
@@ -56,6 +59,7 @@
             height: 100px;
             background-color: rgb(0, 0, 0);
             border-color: rgb(0, 0, 0);
+            color: rgb(0, 0, 0);
             font-size: 50px;
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
@@ -63,6 +67,23 @@
         .btn-dark {
             width:20px;
         }
+
+        #menus {
+            background-color: rgb(255, 255, 255);
+        }
+
+        /* #top-left-button {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        #bottom-left-button {
+            position: relative;
+            bottom: 0;
+            left: 0;
+        } */
+        
     </style>
 </head>
 <body>
@@ -74,79 +95,17 @@
         
     </div>
 
-    <div class="container" id="page2">
-        <div>
-            <div class="col-3">
-                <button type="button" class="btn btn-dark">1</button>
-                <button type="button" class="btn btn-dark">2</button>
-                <button type="button" class="btn btn-dark">3</button>
-                <button type="button" class="btn btn-dark">4</button>
-                <button type="button" class="btn btn-dark">5</button>
+    <div class="container" id="page2">        
+        
+        
+        <div class="row">
+
+            <div>
 
             </div>
 
-            <div class="col-9 grid">
+            <div class="grid">
                 <!-- Generating 450 dots -->
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
                 <div class="dot"></div>
                 <div class="dot"></div>
                 <div class="dot"></div>
@@ -545,16 +504,29 @@
         </div>
     </div>
 
+    <div class="container" id="page3">
+
+
+    </div>
+
     <script>
 
         function show1() {
             page1.style.display = 'block';
             page2.style.display = 'none';
+            page3.style.display = 'none';
         }
 
         function show2() {
             page1.style.display = 'none';
             page2.style.display = 'block';
+            page3.style.display = 'none;'
+        }
+
+        function show3() {
+            page1.style.display = 'none';
+            page2.style.display = 'none';
+            page3.style.display = 'block';
         }
 
 
